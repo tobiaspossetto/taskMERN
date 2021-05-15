@@ -23,7 +23,8 @@ app.use(express.json());
 
 app.use('/api/tasks',require('../src/routes/task.routes'))
 
-//Static files
+//Static files  
+//"webpack": "webpack --mode development --watch"
 
 app.use(express.static(path.join(__dirname,'public')));
 
